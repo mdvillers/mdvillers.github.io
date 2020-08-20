@@ -26,13 +26,11 @@ const IndexPage = () => {
               developer and machine learning enthusiast currently studying in
               Pulchowk Campus.
             </p>
-            {/*<DownloadButton
-              href="https://github.com/mdvillers/mywebsite-react-gatsby/blob/master/Mdv-Resume.pdf"
-              download
-              title="Resume"
-            >
-              Download Resume
-           </DownloadButton>*/}
+            <h3>
+              <DownloadButton href="https://drive.google.com/file/d/1dgPMrqFxDzYgxTJ0FK1KDzpUqAUEiSrY/view">
+                VIEW RESUME
+              </DownloadButton>
+            </h3>
           </div>
           <img src={codeIcon} alt="mdv self" width={200} />
           <br />
