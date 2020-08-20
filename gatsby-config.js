@@ -20,5 +20,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/mdvillers.github.io",
+  pathPrefix: "/",
 };
