@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "personal-website-react",
+  "alias": "aryalmadhav.com.np",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
+}
