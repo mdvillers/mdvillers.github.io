@@ -9,7 +9,7 @@ const Box = styled.div`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-out;
-  background-color: #fff;
+  background-color: rgb(70, 80, 80);
   margin: 0 4% 4%;
   :hover {
     box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
@@ -48,7 +48,7 @@ const BoxIcon = styled.div`
   h3 {
     margin: 0;
     flex: 1;
-    color: #0f1645;
+    color: #ffffff;
   }
   @media (min-width: 768px) and (max-width: 1030px) {
     img {
@@ -62,7 +62,7 @@ const BoxDescription = styled.div`
   display: FLEX;
   height: calc(100% - 120px);
   p {
-    color: #0f1645;
+    color: #ffffff;
   }
   a {
     color: #7fa1e8;

@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
   padding-top: 10%;
   padding-bottom: 5%;
-`
+`;
 export const ProjectsSection = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -15,4 +15,4 @@ export const ProjectsSection = styled.div`
   @media (min-width: 768px) and (max-width: 1030px) {
     flex-direction: column;
   }
-`
+`;
