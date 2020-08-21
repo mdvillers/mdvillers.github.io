@@ -1,14 +1,13 @@
-import Link from 'gatsby-link'
-import React from 'react'
-import styled from 'styled-components'
+import Link from "gatsby-link";
+import React from "react";
+import styled from "styled-components";
 
 const Box = styled.div`
   min-height: 287px;
   border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
-            0 3px 1px -2px rgba(0,0,0,0.12),
-            0 1px 5px 0 rgba(0,0,0,0.2);
+  background-color: rgb(70, 70, 70);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   padding: 3% 2%;
   margin-right: 3%;
   margin-bottom: 3%;
@@ -17,18 +16,19 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.5s ease-out;
+  color: #ffffff;
   :hover {
-    box-shadow:  0 8px 17px 2px rgba(0,0,0,0.14),
-            0 3px 14px 2px rgba(0,0,0,0.12),
-            0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+      0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.5s;
   }
-  :last-of-type{
+  :last-of-type {
     margin-right: 0;
   }
-  a{
+  a {
     margin-top: auto;
-    color: #7fa1e8;
+    color: #12ffff;
+
     text-decoration: none;
   }
   @media (max-width: 700px) {
@@ -36,16 +36,13 @@ const Box = styled.div`
     min-height: auto;
     padding: 5%;
   }
-`
+`;
 const AboutBox = ({ info }) => (
-    <Box>
-      <h3>{info.title}</h3>
-      <p> {info.description}</p>
-      <Link
-          to={info.path}>
-          Read more
-      </Link>
-    </Box>
+  <Box>
+    <h3>{info.title}</h3>
+    <p> {info.description}</p>
+    <Link to={info.path}>Read more</Link>
+  </Box>
 );
 
 export default AboutBox;
