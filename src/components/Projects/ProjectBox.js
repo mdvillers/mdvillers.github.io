@@ -65,7 +65,7 @@ const BoxDescription = styled.div`
     color: #ffffff;
   }
   a {
-    color: #7fa1e8;
+    color: #01ffff;
     font-size: 20px;
     font-weight: bold;
     display: block;

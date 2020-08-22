@@ -22,10 +22,10 @@ export const RecBox = styled.div`
     font-weight: 300;
   }
   h3 a:hover {
-    color: #7fa1e8;
+    color: #01ffff;
   }
   hr {
-    background: #7fa1e8;
+    background: #01ffff;
     width: 15%;
     height: 3px;
     margin: 3% 0;
