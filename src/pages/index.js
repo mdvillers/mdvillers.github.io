@@ -1,6 +1,5 @@
 import React from "react";
-import codeIcon from "../assets/images/code.svg";
-import programmerIcon from "../assets/images/programmer.svg";
+import programmerIcon from "../assets/images/me_800k.jpg";
 import AboutBox from "../components/About/AboutBox";
 import about from "../data/About";
 import {
@@ -11,6 +10,14 @@ import {
   UserTopic,
 } from "../styles/indexStyle.js";
 import Layout from "../components/layout";
+
+const imageStyle = {
+  width: "350px",
+  height: "350px",
+  backgroundSize: "cover",
+  backgroundPosition: "top center",
+  borderRadius: "50%",
+};
 
 const IndexPage = () => {
   return (
@@ -32,9 +39,7 @@ const IndexPage = () => {
               </DownloadButton>
             </h3>
           </div>
-          <img src={codeIcon} alt="mdv self" width={200} />
-          <br />
-          <img src={programmerIcon} alt="mdv self" />
+          <img src={programmerIcon} alt="mdv self" style={imageStyle} />
         </UserDescription>
         <UserTopic>
           {about.map((item) => (
