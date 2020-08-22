@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
   margin: 10% auto;
@@ -11,21 +11,21 @@ export const ContactHeader = styled.h1`
   color: #eeeeee;
   margin-bottom: 5%;
   font-weight: 300;
-`
+`;
 export const ContactDetails = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  h3{
+  h3 {
     font-size: 30px;
-    color: #7fa1e8;
+    color: #01ffff;
     font-weight: 300;
   }
   @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 export const ContactBox = styled.div`
   display: flex;
   align-items: center;
@@ -34,4 +34,4 @@ export const ContactBox = styled.div`
   @media (max-width: 700px) {
     flex-direction: column;
   }
-`
+`;

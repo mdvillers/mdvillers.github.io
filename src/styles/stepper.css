@@ -1,16 +1,16 @@
-.line{
+.line {
   position: absolute;
-  border-left: 1px solid #7fa1e8;
+  border-left: 1px solid #01ffff;
   left: 10px;
   bottom: 0;
   top: 0;
 }
-.circle{
+.circle {
   width: 21px;
   height: 21px;
   line-height: 21px;
   border-radius: 50%;
-  background: #7fa1e8;
+  background: #01ffff;
   position: relative;
   color: #fff;
   text-align: center;
@@ -21,14 +21,14 @@
   min-height: 32px;
   display: flex;
 }
-.experience-stepper .step:last-of-type{
+.experience-stepper .step:last-of-type {
   padding: 0 5px 0 0;
 }
 @media (max-width: 700px) {
   .step {
     padding: 0;
   }
-  .experience-stepper .step:last-of-type{
+  .experience-stepper .step:last-of-type {
     padding: 0;
   }
 }

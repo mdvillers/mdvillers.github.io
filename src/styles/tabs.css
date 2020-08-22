@@ -23,7 +23,7 @@
   border-right: none;
 }
 .react-tabs__tab--selected {
-  color: #7fa1e8;
+  color: #01ffff;
 }
 
 .react-tabs__tab--disabled {
@@ -46,7 +46,7 @@
   .react-tabs__tab-list {
     margin: 0 0 20px;
   }
-  .react-tabs__tab{
+  .react-tabs__tab {
     font-size: 14px;
   }
 }

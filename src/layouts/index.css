@@ -639,7 +639,7 @@ div.cutBackground {
   color: #01ffff;
 }
 .defaultFooter a {
-  color: #7fa1e8;
+  color: #01ffff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -671,6 +671,6 @@ div.footerInitial {
     position: absolute;
     width: 100%;
     box-sizing: border-box;
-    background-color: #eeeeee;
+    background-color: #333a42;
   }
 }
