@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nmefedu/aryalmadhav.com.np/
+    - /bin/cp -R public/* $DEPLOYPATH
