@@ -1,5 +1,6 @@
 import React from "react";
-import programmerIcon from "../assets/images/me_800k.jpg";
+import programmerIcon from "../assets/images/me-800k.png";
+import resume from "../assets/cv/CV_Madhav_Aryal.pdf"
 import AboutBox from "../components/About/AboutBox";
 import about from "../data/About";
 import {
@@ -29,12 +30,11 @@ const IndexPage = () => {
         <UserDescription>
           <div>
             <p>
-              Hello there, welcome to my portfolio. I am a full stack web
-              developer and machine learning enthusiast currently studying in
-              Pulchowk Campus.
+              Hello there, welcome to my portfolio. 
+              I am a technical solutions engineer.
             </p>
             <h3>
-              <DownloadButton href="https://drive.google.com/file/d/1dgPMrqFxDzYgxTJ0FK1KDzpUqAUEiSrY/view">
+              <DownloadButton href={resume}>
                 VIEW RESUME
               </DownloadButton>
             </h3>

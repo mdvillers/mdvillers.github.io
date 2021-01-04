@@ -4,6 +4,6 @@ export default [
     name: "IOE Pulchowk Campus",
     major: "Computer Engineering",
     degree: "Bachelor",
-    dated: "2017 - Present",
+    dated: "2017 - 2022",
   },
 ];

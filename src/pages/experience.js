@@ -11,7 +11,6 @@ import {
   EdContent,
   Stepper,
   StepperHead,
-  LogoLink,
   StepperDesc,
 } from "../styles/workStyle.js";
 import Layout from "../components/layout";
@@ -32,14 +31,11 @@ const Experience = () => (
                 <StepperHead>
                   <div>
                     <h3>{item.designation}</h3>
-                    <a href={item.companyLink} target="_blank">
+                    <a href={item.companyLink} target="_blank" rel="noreferrer">
                       {item.name}
                     </a>
                     <p>{item.dated}</p>
                   </div>
-                  <LogoLink href={item.companyLink}>
-                    <img src={item.logo} alt="company" width="175px" />
-                  </LogoLink>
                 </StepperHead>
                 <StepperDesc
                   dangerouslySetInnerHTML={{

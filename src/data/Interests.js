@@ -9,7 +9,7 @@ export default [
   },
   {
     id: 3,
-    name: "Entrepreneurship",
+    name: "Coding",
   },
   {
     id: 4,

@@ -1,5 +1,7 @@
 import health from "../assets/images/projects/health.svg";
 import whiteboard from "../assets/images/projects/whiteboard.svg";
+import heart from "../assets/images/projects/heart.svg";
+import bus from "../assets/images/projects/bus.svg";
 
 export default [
   {
@@ -24,4 +26,35 @@ export default [
     year: "2018",
     techUsed: "C++",
   },
+  {
+    id: 3,
+    title: "YETI",
+    icon: heart,
+    description:
+      "A progressive web app build featuring medical assist and emergency services for tourist",
+    githubPath: "https://github.com/rabinadk1/Yeti",
+    demoPath: null,
+    year: "2019",
+    techUsed: "React, Firebase",
+  },
+  {
+    id: 4,
+    title: "Public Bus Tracker",
+    icon: bus,
+    description: "Realtime bus tracking app , Android + Web App!",
+    githubPath: null,
+    demoPath: null,
+    year: "2021",
+    techUsed: "React, Node JS, React Native and MongoDB",
+  },
+  {
+    id: 5,
+    title: "Blockchain Based Vaccine Certificate",
+    icon: bus,
+    description: "Final year project. Collaborated with team members to design and implement blockchain based vaccination certificate",
+    githubPath: null,
+    demoPath: null,
+    year: "2022",
+    techUsed: "EthereumJS, NextJS and ExpressJS",
+  }
 ];
