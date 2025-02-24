@@ -20,5 +20,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/",
+  pathPrefix: "/public",
 };
