@@ -1,26 +1,32 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import programmerIcon from "../assets/images/me-800k.png";
-import resume from "../assets/cv/CV_Madhav_Aryal.pdf"
 import AboutBox from "../components/About/AboutBox";
 import about from "../data/About";
 import {
   UserWrapper,
   UserTitle,
   UserDescription,
-  DownloadButton,
   UserTopic,
 } from "../styles/indexStyle.js";
 import Layout from "../components/layout";
 
-const imageStyle = {
-  width: "350px",
-  height: "350px",
-  backgroundSize: "cover",
-  backgroundPosition: "top center",
-  borderRadius: "50%",
-};
 
 const IndexPage = () => {
+  const text = "Hello there, welcome to my portfolio. I am a technical solutions engineer.";
+  const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + text[index]);
+        setIndex(index + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text]);
+
   return (
     <Layout>
       <UserWrapper>
@@ -28,18 +34,11 @@ const IndexPage = () => {
           Madhav <span>Aryal</span>
         </UserTitle>
         <UserDescription>
-          <div>
-            <p>
-              Hello there, welcome to my portfolio. 
-              I am a technical solutions engineer.
-            </p>
-            <h3>
-              <DownloadButton href={resume}>
-                VIEW RESUME
-              </DownloadButton>
-            </h3>
-          </div>
-          <img src={programmerIcon} alt="mdv self" style={imageStyle} />
+          <p>
+            {displayText}
+            <span className="cursor">|</span>
+          </p>
+          <img src={programmerIcon} alt="mdv self"/>
         </UserDescription>
         <UserTopic>
           {about.map((item) => (

@@ -1,4 +1,10 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
+
+const typingAnimation = keyframes`
+  50% {
+    opacity: 0;
+  }
+`;
 
 export const UserWrapper = styled.div`
   margin: 10% auto;
@@ -16,19 +22,25 @@ export const UserTitle = styled.h1`
 `;
 export const UserDescription = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: start;
   margin-bottom: 10%;
   p {
     color: #ffffff;
-    max-width: 90%;
     font-weight: 300;
     font-size: 26px;
     line-height: 1.3;
     margin-bottom: 15%;
+    flex-grow: 4;
+    .cursor {
+      color: #01ffff;
+      animation: ${typingAnimation} 0.5s infinite;
+    }
   }
   img {
-    max-width: 50%;
+    max-width: 20%;
+    background-size:cover;
+    background-position:top center;
   }
   @media (max-width: 700px) {
     flex-direction: column-reverse;
@@ -41,24 +53,6 @@ export const UserDescription = styled.div`
     }
   }
 `;
-export const DownloadButton = styled.a`
-  width: 298px;
-  height: 71px;
-  background-color: rgba(188, 188, 188, 0.1);
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: CENTER;
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-  :hover {
-    color: #01ffff;
-  }
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`;
 export const UserTopic = styled.div`
   display: flex;
   justify-content: center;
@@ -66,3 +60,4 @@ export const UserTopic = styled.div`
     flex-direction: column;
   }
 `;
+
