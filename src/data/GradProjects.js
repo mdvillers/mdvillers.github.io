@@ -57,4 +57,4 @@ export default [
     year: "2022",
     techUsed: "EthereumJS, NextJS and ExpressJS",
   }
-];
+].reverse()

@@ -5,9 +5,12 @@ import AboutBox from "../components/About/AboutBox";
 import about from "../data/About";
 import {
   UserWrapper,
+  UserTitleDescriptionWrapper,
   UserTitle,
   UserDescription,
   UserTopic,
+  UserImage,
+  HeroSection,
 } from "../styles/indexStyle.js";
 import Layout from "../components/layout";
 
@@ -30,16 +33,22 @@ const IndexPage = () => {
   return (
     <Layout>
       <UserWrapper>
-        <UserTitle>
-          Madhav <span>Aryal</span>
-        </UserTitle>
-        <UserDescription>
-          <p>
-            {displayText}
-            <span className="cursor">|</span>
-          </p>
-          <img src={programmerIcon} alt="mdv self"/>
-        </UserDescription>
+        <HeroSection>
+          <UserTitleDescriptionWrapper>
+            <UserTitle>
+              Madhav <span>Aryal</span>
+            </UserTitle>
+            <UserDescription>
+              <p>
+                {displayText}
+                <span className="cursor">|</span>
+              </p>
+            </UserDescription>
+          </UserTitleDescriptionWrapper>
+          <UserImage>
+            <img src={programmerIcon} alt="mdv self" />
+          </UserImage>
+        </HeroSection>
         <UserTopic>
           {about.map((item) => (
             <AboutBox key={item.id} info={item} />

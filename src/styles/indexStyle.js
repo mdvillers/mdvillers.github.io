@@ -1,4 +1,4 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const typingAnimation = keyframes`
   50% {
@@ -9,6 +9,19 @@ const typingAnimation = keyframes`
 export const UserWrapper = styled.div`
   margin: 10% auto;
 `;
+
+export const HeroSection = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+export const UserTitleDescriptionWrapper = styled.div`
+flex: 1; 
+min-width: 515px;
+`
+
 export const UserTitle = styled.h1`
   font-size: 4.2em;
   font-weight: bold;
@@ -16,14 +29,8 @@ export const UserTitle = styled.h1`
   span {
     color: #01ffff;
   }
-  @media (max-width: 700px) {
-    font-size: 3em;
-  }
 `;
 export const UserDescription = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: start;
   margin-bottom: 10%;
   p {
     color: #ffffff;
@@ -31,28 +38,23 @@ export const UserDescription = styled.div`
     font-size: 26px;
     line-height: 1.3;
     margin-bottom: 15%;
-    flex-grow: 4;
     .cursor {
       color: #01ffff;
       animation: ${typingAnimation} 0.5s infinite;
     }
   }
-  img {
-    max-width: 20%;
+`;
+
+export const UserImage = styled.div`
+   max-width: 350px;
+   img {
+    width:100%;
     background-size:cover;
     background-position:top center;
   }
-  @media (max-width: 700px) {
-    flex-direction: column-reverse;
-    img {
-      max-width: 100%;
-    }
-    p {
-      max-width: 100%;
-      font-size: 19px;
-    }
-  }
-`;
+`
+
+
 export const UserTopic = styled.div`
   display: flex;
   justify-content: center;

@@ -5,7 +5,7 @@ export default [
   },
   {
     id: 2,
-    name: "Literature(Poem Writing)",
+    name: "Literature(Poetry)",
   },
   {
     id: 3,
@@ -14,9 +14,5 @@ export default [
   {
     id: 4,
     name: "Traveling",
-  },
-  {
-    id: 5,
-    name: "Speaking",
-  },
+  }
 ];
