@@ -18,8 +18,11 @@ export const HeroSection = styled.div`
 `
 
 export const UserTitleDescriptionWrapper = styled.div`
-flex: 1; 
-min-width: 515px;
+  flex: 1; 
+  min-width: 515px;
+  @media (max-width: 500px) {
+    min-width: 300px;
+  }
 `
 
 export const UserTitle = styled.h1`
