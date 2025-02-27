@@ -15,6 +15,9 @@ export const HeroSection = styled.div`
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: 575px) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const UserTitleDescriptionWrapper = styled.div`
@@ -28,18 +31,24 @@ export const UserTitleDescriptionWrapper = styled.div`
 export const UserTitle = styled.h1`
   font-size: 4.2em;
   font-weight: bold;
+  @media (max-width: 575px) {
+    font-size: 3.2em;
+  }
 `;
 export const UserDescription = styled.div`
   margin-bottom: 10%;
   p {
     color: #ffffff;
     font-weight: 300;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1.3;
     margin-bottom: 15%;
     .cursor {
       color: #01ffff;
       animation: ${typingAnimation} 0.5s infinite;
+    }
+    @media (max-width: 575px) {
+      font-size: 27px;
     }
   }
 `;
@@ -152,4 +161,7 @@ export const NameWrapper = styled.div`
   height: 40px; /* Adjust based on font size */
   display: flex;
   align-items: center;
+  @media (max-width: 575px) {
+    justify-content: center;
+  }
 `;
