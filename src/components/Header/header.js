@@ -8,6 +8,9 @@ const NavList = styled.div`
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  @media (max-width: 400px) {
+    justify-content: center;
+  }
 `;
 
 const Header = () => (
