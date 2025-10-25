@@ -20,11 +20,11 @@ const IndexPage = () => {
   const textOptions = [
     {
       name: "Madhav Aryal",
-      text: "Hello there, welcome to my portfolio. I am a technical solutions engineer."
+      text: "Hello there, welcome to my portfolio. I am currently a PhD student at University of South Florida."
     },
     {
       name: "माधव अर्याल",
-      text: "नमस्कार, मेरो पोर्टफोलियोमा स्वागत छ। म एक प्राविधिक समाधान इञ्जिनियर हुँ।"
+      text: "नमस्कार, मेरो पोर्टफोलियोमा स्वागत छ। म हाल दक्षिण फ्लोरिडा विश्वविद्यालयमा पीएचडी विद्यार्थी हुँ।"
     }
   ];
 
