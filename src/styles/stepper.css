@@ -1,6 +1,6 @@
 .line {
   position: absolute;
-  border-left: 1px solid #01ffff;
+  border-left: 1px solid var(--border-color);
   left: 10px;
   bottom: 0;
   top: 0;
@@ -10,7 +10,7 @@
   height: 21px;
   line-height: 21px;
   border-radius: 50%;
-  background: #01ffff;
+  background: var(--accent-color);
   position: relative;
   color: #fff;
   text-align: center;

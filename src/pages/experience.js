@@ -2,8 +2,6 @@ import React from "react";
 import "../styles/stepper.css";
 import work from "../data/Work";
 import grad from "../data/Edu";
-import lang from "../data/Language";
-import hobby from "../data/Interests";
 import {
   ExperienceWrapper,
   WorkWrapper,
@@ -54,26 +52,9 @@ const Experience = () => (
           {grad.map((item) => (
             <div key={item.id}>
               <p>
-                {item.degree}'s Degree majored in {item.major} from {item.name}{" "}
-                <br />
-                {item.dated}
+                {item.degree} in {item.major}, {item.name}
               </p>
-            </div>
-          ))}
-        </EdContent>
-        <h1>Interests</h1>
-        <EdContent>
-          {hobby.map((item) => (
-            <div key={item.id}>
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </EdContent>
-        <h1>Language</h1>
-        <EdContent>
-          {lang.map((item) => (
-            <div key={item.id}>
-              <p>{item.name}</p>
+              <p>{item.dated}</p>
             </div>
           ))}
         </EdContent>

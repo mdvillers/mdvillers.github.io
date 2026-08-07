@@ -3,23 +3,24 @@ import React from "react";
 import styled from "styled-components";
 
 const LinkNav = styled(Link)`
-  color: #ffffff;
+  color: var(--muted-text-color);
   transition: color 0.2s ease-out;
   text-decoration: none;
+  font-weight: 500;
 
   &.active {
     span{
-      color: #01ffff;
+      color: var(--accent-color);
     }
     img{
-      filter: invert(85%) sepia(82%) saturate(1507%) hue-rotate(110deg) brightness(104%) contrast(107%);
+      filter: invert(52%) sepia(71%) saturate(1044%) hue-rotate(166deg) brightness(101%) contrast(95%);
     }
   }
 `;
 
 const Span = styled.span`
   :hover {
-    color: #01ffff;
+    color: var(--accent-color);
     transition: color 0.2s;
   }
   @media (max-width: 400px) {
@@ -31,10 +32,10 @@ const Img = styled.img`
   display: none;
   height: 20px;
   width: 20px;
-  filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(140deg) brightness(103%) contrast(109%);
+  filter: invert(37%) sepia(10%) saturate(684%) hue-rotate(175deg) brightness(94%) contrast(87%);
   margin-bottom:0px;
   :hover{
-      filter: invert(85%) sepia(82%) saturate(1507%) hue-rotate(110deg) brightness(104%) contrast(107%);
+      filter: invert(52%) sepia(71%) saturate(1044%) hue-rotate(166deg) brightness(101%) contrast(95%);
   }
   @media (max-width: 400px) {
     display:inline;
