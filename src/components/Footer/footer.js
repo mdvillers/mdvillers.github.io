@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Footer = ({ footerClass }) => (
-  <div className={`defaultFooter ${footerClass}`}>
+const Footer = ({ footerClass = "" }) => (
+  <div className={`defaultFooter ${footerClass}`.trim()}>
     <p>&copy; Madhav Aryal. All rights reserved.</p>
   </div>
 );
