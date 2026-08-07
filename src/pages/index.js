@@ -1,5 +1,4 @@
 import React from "react";
-import programmerIcon from "../assets/images/me-800k.png";
 import AboutBox from "../components/About/AboutBox";
 import about from "../data/About";
 import {
@@ -27,7 +26,10 @@ const IndexPage = () => (
           </UserDescription>
         </UserTitleDescriptionWrapper>
         <UserImage>
-          <img src={programmerIcon} alt="Madhav Aryal" />
+          <img
+            src="https://github.com/user-attachments/assets/2e9aad3d-440f-4d05-92b9-3437de0537b7"
+            alt="Madhav Aryal"
+          />
         </UserImage>
       </HeroSection>
       <UserTopic>
