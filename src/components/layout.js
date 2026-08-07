@@ -11,7 +11,6 @@ import favicon from "../assets/images/mdv-favicon.png";
 
 import "../layouts/index.css";
 import Header from "./Header/header";
-import Footer from "./Footer/footer";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -107,12 +106,19 @@ const Layout = ({ children }) => {
           <Wrapper data-theme={theme}>
             <TopBar>
               <Header />
-              <ThemeButton onClick={toggleTheme} type="button">
-                {theme === "light" ? "Dark mode" : "Light mode"}
+              <ThemeButton
+                onClick={toggleTheme}
+                type="button"
+                aria-label={
+                  theme === "light"
+                    ? "Switch to dark mode"
+                    : "Switch to light mode"
+                }
+              >
+                {theme === "light" ? "🌙" : "☀️"}
               </ThemeButton>
             </TopBar>
             {children}
-            <Footer />
           </Wrapper>
         </>
       )}
